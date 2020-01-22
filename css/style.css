@@ -134,6 +134,8 @@ body {
   background: #FFFFFF;
   box-shadow: -5px 5px 0px #FFC41D;
   border-radius: 5px;
+  max-width: 380px;
+  padding: 40px 48px 48px 48px;
 }
 
 .form-title {
@@ -142,4 +144,35 @@ body {
   line-height: 28px;
   text-align: center;
   color: #000000;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.input {
+  background: #F8F8F8;
+  border: none;
+  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  padding: 18px 20px 18px 50px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.input-name {
+  margin-bottom: 17px;
+  background-image: url(../img/user-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.input-phone {
+  margin-bottom: 17px;
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.form-button {
+  min-width: 100%;
 }
