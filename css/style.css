@@ -20,6 +20,19 @@ body {
   margin: auto;
 }
 
+.section {
+  padding-top: 64px;
+  padding-bottom: 92px;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 84px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
 .hero-header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .hero-subtitle {
   display: inline-block;
   font-size: 24px;
@@ -80,4 +94,52 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   border: 13px solid #fff;
+}
+
+/* features */
+.features {
+  background-color: #000;
+}
+
+.features-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-item {
+  flex-basis: 30%;
+  margin-bottom: 63px;
+}
+
+.features-image {
+  margin-bottom: 22px;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* contacts */
+.contacts-form {
+  background: #FFFFFF;
+  box-shadow: -5px 5px 0px #FFC41D;
+  border-radius: 5px;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
 }
