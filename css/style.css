@@ -44,6 +44,10 @@ body {
   margin-left: 20px;
 }
 
+.social-link:first-child {
+  margin-left: 0;
+}
+
 .hero-content {
   display: flex;
   justify-content: space-between;
@@ -51,7 +55,7 @@ body {
 }
 
 .hero-subtitle {
-  display: inline-block;
+  display: block;
   font-size: 24px;
   line-height: 28px;
   color: #FFBB01;
@@ -175,4 +179,57 @@ body {
 
 .form-button {
   min-width: 100%;
+}
+
+.contacts-blok {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-text {
+  flex-basis: 50%;
+}
+
+.contacts-data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+.contacts-phone,
+.contacts-mail {
+  flex-basis: 50%;
+  margin-bottom: 53px;
+}
+
+.contacts-social {
+  flex-basis: 100%;
+}
+
+.contacts-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 37px;
+}
+
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-policy {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #A5A5A5;
+  margin-top: 72px;
 }
