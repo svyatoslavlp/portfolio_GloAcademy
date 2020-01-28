@@ -15,6 +15,11 @@ body {
 
 .hero {
   padding: 50px;
+  background: -webkit-gradient(linear,
+      left bottom, left top,
+      from(#D7D7D9),
+      color-stop(23%, #D7D7D9),
+      to(#8c8987));
   background: linear-gradient(0deg,
       #D7D7D9 0%,
       #D7D7D9 23%,
@@ -43,24 +48,32 @@ body {
 }
 
 .hero-header {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   margin-bottom: 105px;
 }
 
 .social-links {
+  display: -webkit-box;
   display: flex;
 }
 
 .social-link {
   margin-left: 20px;
+  display: -webkit-box;
   display: flex;
   height: 40px;
   width: 40px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   border-radius: 5px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -74,9 +87,12 @@ body {
 }
 
 .hero-content {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .hero-text {
@@ -117,6 +133,7 @@ body {
   line-height: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -151,9 +168,11 @@ body {
 }
 
 .features-block {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .features-item {
@@ -186,13 +205,17 @@ body {
 }
 
 .project-slide {
+  display: -webkit-box;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .project-text {
   flex-basis: 60%;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
@@ -215,8 +238,10 @@ body {
 .project-time,
 .project-cost,
 .project-feedback {
+  display: -webkit-box;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 
 .project-subtitle {
@@ -238,9 +263,12 @@ body {
 }
 
 .projects-pagination {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   margin-top: 44px;
 }
 
@@ -306,9 +334,12 @@ body {
 }
 
 .contacts-blok {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts-text {
@@ -316,6 +347,7 @@ body {
 }
 
 .contacts-data {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 42px;
@@ -353,12 +385,17 @@ body {
   display: inline-block;
   font-size: 15px;
   line-height: 18px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #401B22;
   margin-top: 72px;
 }
 
 footer {
+  background: -webkit-gradient(linear,
+      left top, left bottom,
+      from(#D7D7D9),
+      to(#8c8987));
   background: linear-gradient(180deg,
       #D7D7D9 0%,
       #8c8987 100%);
@@ -376,11 +413,14 @@ footer {
 
 @media (max-width: 836px) {
   .hero-content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 
   .hero-avatar {
-    order: 0;
+    -webkit-box-ordinal-group: 1;
+            order: 0;
     width: 300px;
     height: 300px;
     border-width: 10px;
@@ -388,7 +428,8 @@ footer {
   }
 
   .hero-text {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
     text-align: center;
   }
 
@@ -401,8 +442,11 @@ footer {
   }
 
   .project-slide {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
   }
 
   .porject-image {
@@ -414,7 +458,9 @@ footer {
   }
 
   .contacts-blok {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 
   .contacts-form {
