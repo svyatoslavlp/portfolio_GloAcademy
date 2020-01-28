@@ -1,6 +1,6 @@
 # portfolio_GloAcademy
 
-<!-- https://github.com/svyatoslavlp/portfolio_GloAcademy -->
-Вёрстка сайта к уроку Glo Academy
-Создан 2020-01-22
-Состояние - Допиливаю 1й вариан в продакшен
+Вёрстка сайта к уроку Glo Academy    
+Создан 2020-01-22    
+Состояние - Допиливаю 1й вариан в продакшен    
+Разбираюсь с sass

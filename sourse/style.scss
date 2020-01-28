@@ -293,6 +293,15 @@ footer {
   background: linear-gradient(180deg,
       #D7D7D9 0%,
       #8c8987 100%);
+
+  .contacts-blok {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 .contacts-title {
@@ -392,32 +401,38 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .hero-avatar {
-    width: 300px;
-    height: 300px;
-    border-width: 10px;
+  .hero {
+    .hero-content {
+      .hero-avatar {
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+      }
+    }
   }
 }
 
 @media (max-width: 836px) {
-  .hero-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
+  .hero {
+    .hero-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
 
-    .hero-text {
-      -webkit-box-ordinal-group: 2;
-      order: 1;
-      text-align: center;
-    }
+      .hero-text {
+        -webkit-box-ordinal-group: 2;
+        order: 1;
+        text-align: center;
+      }
 
-    .hero-avatar {
-      -webkit-box-ordinal-group: 1;
-      order: 0;
-      width: 300px;
-      height: 300px;
-      border-width: 10px;
-      margin-bottom: 17px;
+      .hero-avatar {
+        -webkit-box-ordinal-group: 1;
+        order: 0;
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+        margin-bottom: 17px;
+      }
     }
   }
 
@@ -461,12 +476,16 @@ footer {
     padding-bottom: 75px;
   }
 
-  .hero-avatar {
-    width: 113px;
-    height: 113px;
-    border-width: 4px;
-    background-size: 100%;
-    background-position: center top;
+  .hero {
+    .hero-content {
+      .hero-avatar {
+        width: 113px;
+        height: 113px;
+        border-width: 4px;
+        background-size: 100%;
+        background-position: center top;
+      }
+    }
   }
 
   .hero-subtitle {
