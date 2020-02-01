@@ -12,6 +12,19 @@ body {
   color: #401B22;
   font-family: 'Roboto', sans-serif;
 }
+//  Временный блок -->
+.temp {
+  background-color: red;
+  color: white;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+//  Временный блок -->
 
 .hero {
   padding: 50px;
